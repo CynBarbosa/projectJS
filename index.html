@@ -8,14 +8,79 @@
   </head>
   <body>
     <header>
-      <h1>Bienvenido!</h1>
+      <div class="containerImgPerfil">
+        <img
+          class="imgPerfil"
+          id="imgPerfil"
+          src="./asset/img/beonnnie.jpg"
+          alt="imagenPefil"
+        />
+        <button id="botonFotoPerfil">cambiar foto de perfil!</button>
+        <input
+          class="oculto inputOcultoPerfil"
+          id="inputFotoPerfil"
+          type="file"
+          accept="image/*"
+        />
+      </div>
+      <div class="perfilConteiner">
+        <div class="containerPerfil">
+          <h1 class="nombrePerfil" id="nombrePerfil">Nombre</h1>
+          <button id="botonNombrePerfil">Editar Nombre</button>
+          <input
+            class="oculto inputOcultoPerfil"
+            id="inputNombrePerfil"
+            type="text"
+            placeholder="Escribe un nombre!"
+          />
+        </div>
+        <div class="containerPerfil">
+          <p class="informacionPerfil" id="informacionPerfil">informacion</p>
+          <button id="botoInformacionPerfil">Editar informacion</button>
+          <input
+            class="oculto inputOcultoPerfil"
+            id="inputInformacionPerfil"
+            type="text"
+            placeholder="Escribe una breve informacion!"
+          />
+        </div>
+      </div>
+      <div class="containerNewPost">
+        <button class="newPublicacion" id="newPublicacion">
+          Agregar publicacion
+        </button>
+      </div>
     </header>
     <main>
-      <img src="./asset/img/batman.jpg" alt="Batman" />
+      <div class="container">
+        <div class="containerImg">
+          <div class="imgContainer">
+            <img class="imagen" src="./asset/img/Bonnie.jpg" alt="imagen" />
+          </div>
+          <h2 class="titulo">titulo</h2>
+          <div class="containerButton">
+            <button class="boton" id="botonLike">Like</button>
+            <button class="boton" id="botonComentario">Comentar</button>
+            <button class="boton" id="botonFavoritos">Favorito</button>
+          </div>
+        </div>
+        <div class="containerComentarios">
+          <div class="comentarios" id="comentarios">
+            <h3 class="tituloComentario">Comentarios:</h3>
+          </div>
+          <div class="containerInput">
+            <input
+              class="input"
+              id="inputComentarios"
+              type="text"
+              placeholder="Agregar comentario"
+            />
+            <button class="buttonInput" id="buttonInput">Publicar</button>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <h3>Los derechos reservados</h3>
-    </footer>
-    <script src="./main.js"></script>
+    <footer><p>Emulador</p></footer>
+    <script src="./simulador.js"></script>
   </body>
 </html>
